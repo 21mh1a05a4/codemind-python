@@ -1,0 +1,17 @@
+n=int(input())
+s=n*n
+rev=0
+while(n):
+    r=n%10
+    rev=rev*10+r
+    n=n//10
+g=rev*rev
+re=0
+while(g):
+    d=g%10
+    re=re*10+d
+    g=g//10
+if(s==re):
+    print("True")
+else:
+    print("False")
