@@ -1,7 +1,10 @@
-a=input()
-b=input()
-if b in a:
-    print('True')
-    print(a.index(b))
-else:
-    print('False')
+n=input()
+k=input()
+for i in n:
+    if k in n:
+        print('True')
+        print(n.index(k))
+        break
+    else:
+        print('False')
+        break
