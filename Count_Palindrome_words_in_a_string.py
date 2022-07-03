@@ -1,8 +1,9 @@
 n=input()
-n1=n.lower()
+n=n.lower()
+n=n.split()
 c=0
-x=n1.split()
-for i in x:
-    if i==i[: : -1]:
+for i in n:
+    i=str(i)
+    if i==i[::-1]:
         c+=1
 print(c)
