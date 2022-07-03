@@ -1,9 +1,9 @@
 a=input()
-a=a.split()
-for i in a:
-    i=str(i)
+arr=list(a.split())
+v='aeiouAEIOU'
+for i in arr:
     c=0
     for j in i:
-        if j in 'aeiouAEIOU':
+        if j in v:
             c+=1
-    print(c,end=' ')        
+    print(c,end=" ")
