@@ -1,11 +1,15 @@
 a=input()
-a=a.split()
-s=[]
-for i in a:
-    i=str(i)
+arr=list(a.split())
+vow=list("aeiouAEIOU")
+ma=100
+fl=0
+for i in arr:
     c=0
     for j in i:
-        if j in 'aeiouAEIOU':
+        if j in vow:
             c+=1
-    s.append(c)
-print(min(s))        
+            fl=1
+    if ma>c:
+        ma=c
+
+print(ma)
